@@ -1,0 +1,17 @@
+name: First Workflow
+on: workflow_dispatch 
+# trigger or Event
+jobs:
+# go to new line and click TAB to define jobs
+  first-job: 
+  #runs on: is reserved identifier similar to job: , name: , on: , steps:
+  #check all runners available on github Actions e.g. ubuntu , windows etc.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world"
+      - name: Print goodbye
+        run: echo "Done- bye!"
+      
+    
+  
